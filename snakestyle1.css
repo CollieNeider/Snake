@@ -1,0 +1,103 @@
+/*General*/
+body {
+  height: 100%;
+	width: 100%;
+  margin: 0;
+	font-family: Century Gothic;
+	text-align: center;
+  letter-spacing: 0.05px;
+  word-spacing: 0.08px;
+	background-image: url("snakesmoke1.png");
+	background-position: bottom center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#menu1{
+	list-style-type: none;
+	width: 580px;
+	margin: 0 auto;
+	padding: 0 auto;
+	overflow: hidden;
+	background-color: grey;
+}
+li{
+	float: left;
+	margin: 15px;
+	padding: 5px;
+}
+a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 200ms;
+}
+a:hover {
+	color: white;
+}
+.active {
+	color: white;
+}
+.sneaky {
+  animation-name: sneaky;
+  animation-duration: 2s;
+}
+@keyframes sneaky {
+  0% {opacity: 0.1;}
+  100% {opacity: 1;}
+}
+/*Photography & Art*/
+#box {
+	border-radius: 3%;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 1000;
+	height: 500;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 9px;
+}
+#button {
+	background-color: #262626;
+  color: white;
+	position: relative;
+  top: -45%;
+  font-size: 60px;
+  font-family: Juice ITC;
+  padding: 10px;
+  padding-bottom: 3px;
+  opacity: 0.6;
+  border-radius: 6%;
+  border: none;
+  transition-duration: 200ms;
+}
+#button:hover {
+  background-color: black;
+}
+.left {
+  right: 2%;
+}
+.right {
+  left: 2%;
+}
+/*News*/
+article{
+ 		width: 900px;
+	  border: 1px solid black;
+	  padding: 18px;
+	  margin: 25px;
+		margin-left: auto;
+		margin-right: auto;
+    background-color: #666666;
+}
+#link {
+  text-decoration: underline;
+}
+#social {
+  transition-duration: 200ms;
+}
+#social:hover {
+  opacity: 0.5;
+}
+footer {
+  margin-bottom: 18px;
+}
