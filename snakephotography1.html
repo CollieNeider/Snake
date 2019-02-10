@@ -1,0 +1,53 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<link href="snakestyle1.css" rel="stylesheet">
+	<title>Snake-Photography</title>
+		<script>
+		var bilder = ["syksy1.jpg","IMG_1437.jpg","syksy3.jpg","IMG_1425.jpg","syksy5.jpg","syksy6.jpg"];
+		var index = 0;
+		function nextimage(){
+		index++;
+		if (index>=bilder.length){
+		index=0;
+		}
+		document.getElementById("pic").src=bilder[index];
+		}
+		function previousimage(){
+		index--;
+		if (index<0){
+		index=4;
+		}
+		document.getElementById("pic").src=bilder[index];
+		}
+		</script>
+	</head>
+<body bgcolor="#666666" id="body">
+<br><img src="snakesign.png" width="400px"><br><br>
+<ul id="menu1">
+	<li><a href="snakesite1.html">Start</a></li>
+	<li><a href="snakenews1.html">News</a></li>
+	<li><a href="snakeart1.html">Art</a></li>
+	<li><a href="snakephotography1.html" class="active">Photography</a></li>
+	<li><a href="snakeother1.html">Other</a></li>
+	<li><a href="snakeabout1.html">About</a></li>
+</ul>
+	<div class="sneaky">
+	<br><br><p>All the latest and best pictures I took or edited can be found here</p><br><br>
+	<div id="box">
+		<input type="button" id="button" class="left" value="<" onclick="previousimage()">
+		<img id="pic" height="500" src="IMG_1437.jpg">
+		<input type="button" id="button" class="right" value=">" onclick="nextimage()">
+	</div>
+	<br><br><br>
+	Also make sure to check out my social medias for more<br><br><br>
+	</div>
+<footer>
+<a href="http://twitter.com/sinineikkonen"><img src="snaketwitter.png" width="50px" id="social"></a>
+<a href="http://instagram.com/s.i.n.i.k.k.a"><img src="snakeinstagram.png" width="52px" id="social"></a>
+<a href="http://facebook.com/"><img src="snakefacebook.png" width="50px" id="social"></a><br><br><br>
+<br><br><br>
+<div style="font-size: 12px; margin-bottom: 9px">© Collie Neider 2019</div>
+</footer>
+</body>
+</html>
