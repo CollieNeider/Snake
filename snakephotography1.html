@@ -8,7 +8,7 @@
 		var index = 0;
 		function nextimage(){
 		index++;
-		if (index>=bilder.length){
+		if (index>bilder.length){
 		index=0;
 		}
 		document.getElementById("pic").src=bilder[index];
@@ -16,7 +16,7 @@
 		function previousimage(){
 		index--;
 		if (index<0){
-		index=4;
+		index=bilder.length;
 		}
 		document.getElementById("pic").src=bilder[index];
 		}
