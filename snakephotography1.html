@@ -5,11 +5,11 @@
 	<link href="snakestyle1.css" rel="stylesheet">
 	<title>Snake-Photography</title>
 		<script>
-		var bilder = ["IMG_1437.JPG","syksy3.jpg","IMG_1425.JPG","syksy5.jpg","syksy6.jpg""syksy1.jpg"];
+		var bilder = ["syksy1.jpg","IMG_1437.jpg","syksy3.jpg","IMG_1425.jpg","syksy5.jpg","syksy6.jpg"];
 		var index = 0;
 		function nextimage(){
 		index++;
-		if (index>bilder.length){
+		if (index>=bilder.length){
 		index=0;
 		}
 		document.getElementById("pic").src=bilder[index];
@@ -26,7 +26,7 @@
 <body bgcolor="#666666" id="body">
 <br><img src="snakesign.png" width="400px"><br><br>
 <ul id="menu1">
-	<li><a href="index.html">Start</a></li>
+	<li><a href="snakesite1.html">Start</a></li>
 	<li><a href="snakenews1.html">News</a></li>
 	<li><a href="snakeart1.html">Art</a></li>
 	<li><a href="snakephotography1.html" class="active">Photography</a></li>
@@ -37,7 +37,7 @@
 	<br><br><p>All the latest and best pictures I took or edited can be found here</p><br><br>
 	<div id="box">
 		<input type="button" id="button" class="left" value="<" onclick="previousimage()">
-		<img id="pic" height="500" src="IMG_1437.JPG">
+		<img id="pic" height="500" src="IMG_1437.jpg">
 		<input type="button" id="button" class="right" value=">" onclick="nextimage()">
 	</div>
 	<br><br><br>
@@ -52,3 +52,4 @@
 </footer>
 </body>
 </html>
+
