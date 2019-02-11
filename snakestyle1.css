@@ -1,7 +1,7 @@
 /*General*/
 body {
-  height: 100%;
-	width: 100%;
+	height: window.innerHeight;
+	width: window.innerWidth;
   margin: 0;
 	font-family: Century Gothic, sans-serif;
 	text-align: center;
