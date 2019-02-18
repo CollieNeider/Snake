@@ -67,7 +67,7 @@ function keyPressed() {
   if (keyCode==38){
   yr2=yr2-30;
 }
-if (keyCode==89){
+if (keyCode==83){
   yr1=yr1+30;
 }
 if (keyCode==87){
