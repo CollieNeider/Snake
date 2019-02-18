@@ -43,14 +43,12 @@ function draw() {
     x = 700;
     y = 300;
     vx = -vx;
-    vy = -vy;
   }
   if (x + radius == window.innerWidth) {
     punkte1 = punkte1+1;
     x = 700;
     y = 300;
     vx = -vx;
-    vy = -vy;
   }
   textSize(36);
   text(punkte1, 630, 50);
