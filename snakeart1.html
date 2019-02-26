@@ -3,6 +3,24 @@
 <meta charset="utf-8">
 <link href="snakestyle1.css" rel="stylesheet">
 <title>Snake</title>
+	<script>
+var bilder = ["sea2.jpg","leafs.jpg","cat.jpg","moonlight.jpg"];
+var index = 0;
+function nextimage(){
+index++;
+if (index>=bilder.length){
+index=0;
+}
+document.getElementById("pic").src=bilder[index];
+}
+function previousimage(){
+index--;
+if (index<0){
+index=bilder.length-1;
+}
+document.getElementById("pic").src=bilder[index];
+}
+</script>
 </head>
 <body bgcolor="#666666" id="body">
 <br><img src="snakesign.png" width="400px"><br><br>
